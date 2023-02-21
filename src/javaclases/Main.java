@@ -1,7 +1,9 @@
 package javaclases;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
 
 public class Main {
 	//List<String> symptoms= new ArrayList<String>();
@@ -17,4 +19,35 @@ public class Main {
 	//		"Inflammation_of_the_respiratory_tract", "Dyspnea", "Sweating", "Mucus", "Expectoration", 
 	//		"Stridor", "Hypoxemia", "Tachycardia","Hypertemia", "Loss_of_negative_pressure", "Sneezing", 
 	//		"Chronic_cough");
+	
+	
+	
+	
+	public static void main(String[] args) throws Exception, IOException{
+		
+		String text = "";
+        int number = 0;
+        
+		  try {
+              BufferedReader consola = new BufferedReader(new InputStreamReader(System.in));
+              text = consola.readLine();
+              number = Integer.parseInt(text);
+         
+
+		do {
+			
+			System.out.println("Hello, write the number of the symptom or symptoms that you suffer: ");
+			System.out.println("  0. Shortness of breath"+"/n"
+								+"1. Rapid breathing"+"/n"
+								+"2.Wheezing"+"/n"
+								+"3.Cyanosis"+"/n"
+								+"4.Headache"+"/n");
+			
+			
+			}while (true);
+
+		  } catch (IOException ioe) {
+              System.out.println("Error in keyboard reading. Please enter an input again.");
+		  }//catch
+}
 }

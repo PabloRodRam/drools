@@ -5,7 +5,7 @@ package java.rules
 
 expander customLanguage.dsl
 
-import javaclases.desease
+import javaclases.Disease
 import javSymptomsSyntomps
 
 #declare any global variables here
@@ -18,7 +18,7 @@ function myFunction( ... ) {
 rule "Hipoxemia"
  	dialect "java"
     when
-        dis1 : desease (symptoms.content)
+        dis1 : Disease (symptoms.content)
     then
         dis1.name
 
