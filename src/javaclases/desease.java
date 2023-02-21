@@ -1,12 +1,13 @@
 package javaclases;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class desease {
 	String name;
-	ArrayList<sympthomps> symptoms;
+	List<Syntomps> symptoms=new ArrayList<Syntomps>();
 
-	public desease(String name, ArrayList<sympthomps> symptoms) {
+	public desease(String name, ArrayList<Syntomps> symptoms) {
 		super();
 		this.name = name;
 		this.symptoms = symptoms;
@@ -24,11 +25,11 @@ public class desease {
 		this.name = name;
 	}
 
-	public ArrayList<sympthomps> getSymptoms() {
+	public ArrayList<Syntomps> getSymptoms() {
 		return symptoms;
 	}
 
-	public void setSymptoms(ArrayList<sympthomps> symptoms) {
+	public void setSymptoms(ArrayList<Syntomps> symptoms) {
 		this.symptoms = symptoms;
 	}
 

@@ -5,6 +5,8 @@ package java.rules
 
 expander customLanguage.dsl
 
+import javaclases.desease
+import javaclases.Syntomps
 
 #declare any global variables here
 
@@ -13,13 +15,12 @@ function myFunction( ... ) {
 }
 
 
-
 rule "Hipoxemia"
  	dialect "java"
     when
-        #conditions
+        dis1 : desease (symptoms.content)
     then
-        #actions
+        dis1.name
 
 end
 
@@ -33,7 +34,7 @@ rule "Apnea"
 
 end
 
-rule "Your First Rule"
+rule "Hyperapnea"
  	dialect "java"
     when
         #conditions
@@ -42,7 +43,7 @@ rule "Your First Rule"
 
 end
 
-rule "Your Second Rule"
+rule "Tachypnea"
     #include attributes such as "salience" here...
     dialect "java"
     when
@@ -52,7 +53,7 @@ rule "Your Second Rule"
 
 end
 
-rule "Your First Rule"
+rule "Dysnea"
  	dialect "java"
     when
         #conditions
@@ -61,7 +62,7 @@ rule "Your First Rule"
 
 end
 
-rule "Your Second Rule"
+rule "Respiratory insufiency"
     #include attributes such as "salience" here...
     dialect "java"
     when
@@ -71,7 +72,7 @@ rule "Your Second Rule"
 
 end
 
-rule "Your First Rule"
+rule "Lung Cancer"
  	dialect "java"
     when
         #conditions
@@ -80,7 +81,7 @@ rule "Your First Rule"
 
 end
 
-rule "Your Second Rule"
+rule "COVID"
     #include attributes such as "salience" here...
     dialect "java"
     when
@@ -90,7 +91,7 @@ rule "Your Second Rule"
 
 end
 
-rule "Your First Rule"
+rule "Asthma"
  	dialect "java"
     when
         #conditions
@@ -99,7 +100,7 @@ rule "Your First Rule"
 
 end
 
-rule "Your Second Rule"
+rule "Emphysema"
     #include attributes such as "salience" here...
     dialect "java"
     when
@@ -109,7 +110,7 @@ rule "Your Second Rule"
 
 end
 
-rule "Your First Rule"
+rule "Bronchitis chronic"
  	dialect "java"
     when
         #conditions
@@ -118,7 +119,7 @@ rule "Your First Rule"
 
 end
 
-rule "Your Second Rule"
+rule "Atelectasis"
     #include attributes such as "salience" here...
     dialect "java"
     when
@@ -128,7 +129,7 @@ rule "Your Second Rule"
 
 end
 
-rule "Your First Rule"
+rule "Pneumotorax"
  	dialect "java"
     when
         #conditions
@@ -137,7 +138,7 @@ rule "Your First Rule"
 
 end
 
-rule "Your Second Rule"
+rule "Pneumonia"
     #include attributes such as "salience" here...
     dialect "java"
     when
@@ -147,7 +148,7 @@ rule "Your Second Rule"
 
 end
 
-rule "Your First Rule"
+rule "Malignant pleura effusion"
  	dialect "java"
     when
         #conditions
@@ -156,7 +157,7 @@ rule "Your First Rule"
 
 end
 
-rule "Your Second Rule"
+rule "Pulmonary embolism"
     #include attributes such as "salience" here...
     dialect "java"
     when
@@ -166,7 +167,7 @@ rule "Your Second Rule"
 
 end
 
-rule "Your First Rule"
+rule "Cold"
  	dialect "java"
     when
         #conditions
@@ -175,7 +176,7 @@ rule "Your First Rule"
 
 end
 
-rule "Your Second Rule"
+rule "Flu"
     #include attributes such as "salience" here...
     dialect "java"
     when
