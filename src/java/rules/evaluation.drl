@@ -1,0 +1,187 @@
+#created on: 21 feb. 2023
+package java.rules
+
+#list any import classes here.
+
+expander customLanguage.dsl
+
+
+#declare any global variables here
+
+function myFunction( ... ) {
+    #function content (can have multiple functions) 
+}
+
+
+
+rule "Hipoxemia"
+ 	dialect "java"
+    when
+        #conditions
+    then
+        #actions
+
+end
+
+rule "Apnea"
+    #include attributes such as "salience" here...
+    dialect "java"
+    when
+        #conditions
+    then
+        #actions
+
+end
+
+rule "Your First Rule"
+ 	dialect "java"
+    when
+        #conditions
+    then
+        #actions
+
+end
+
+rule "Your Second Rule"
+    #include attributes such as "salience" here...
+    dialect "java"
+    when
+        #conditions
+    then
+        #actions
+
+end
+
+rule "Your First Rule"
+ 	dialect "java"
+    when
+        #conditions
+    then
+        #actions
+
+end
+
+rule "Your Second Rule"
+    #include attributes such as "salience" here...
+    dialect "java"
+    when
+        #conditions
+    then
+        #actions
+
+end
+
+rule "Your First Rule"
+ 	dialect "java"
+    when
+        #conditions
+    then
+        #actions
+
+end
+
+rule "Your Second Rule"
+    #include attributes such as "salience" here...
+    dialect "java"
+    when
+        #conditions
+    then
+        #actions
+
+end
+
+rule "Your First Rule"
+ 	dialect "java"
+    when
+        #conditions
+    then
+        #actions
+
+end
+
+rule "Your Second Rule"
+    #include attributes such as "salience" here...
+    dialect "java"
+    when
+        #conditions
+    then
+        #actions
+
+end
+
+rule "Your First Rule"
+ 	dialect "java"
+    when
+        #conditions
+    then
+        #actions
+
+end
+
+rule "Your Second Rule"
+    #include attributes such as "salience" here...
+    dialect "java"
+    when
+        #conditions
+    then
+        #actions
+
+end
+
+rule "Your First Rule"
+ 	dialect "java"
+    when
+        #conditions
+    then
+        #actions
+
+end
+
+rule "Your Second Rule"
+    #include attributes such as "salience" here...
+    dialect "java"
+    when
+        #conditions
+    then
+        #actions
+
+end
+
+rule "Your First Rule"
+ 	dialect "java"
+    when
+        #conditions
+    then
+        #actions
+
+end
+
+rule "Your Second Rule"
+    #include attributes such as "salience" here...
+    dialect "java"
+    when
+        #conditions
+    then
+        #actions
+
+end
+
+rule "Your First Rule"
+ 	dialect "java"
+    when
+        #conditions
+    then
+        #actions
+
+end
+
+rule "Your Second Rule"
+    #include attributes such as "salience" here...
+    dialect "java"
+    when
+        #conditions
+    then
+        #actions
+
+end
+
