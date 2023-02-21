@@ -1,6 +1,6 @@
 package javaclases;
 
-public enum Syntomps {
+public enum Symptoms {
 	Shortness_of_breath_or_difficulty_breathing, Rapid_breathing_or_breathing_too_fast, Wheezing, Cyanosis, Headache,
 	Confusion_or_Disorientation, Irregular_heartbeat, Chest_pain,
 	chest_pain_that_gets_worse_when_you_breathe_deeply_or_cough, Fatigue_or_Weakness, Dizzines,

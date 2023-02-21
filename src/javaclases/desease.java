@@ -5,9 +5,9 @@ import java.util.List;
 
 public class desease {
 	String name;
-	List<Syntomps> symptoms=new ArrayList<Syntomps>();
+	List<Symptoms> symptoms=new ArrayList<Symptoms>();
 
-	public desease(String name, ArrayList<Syntomps> symptoms) {
+	public desease(String name, ArrayList<Symptoms> symptoms) {
 		super();
 		this.name = name;
 		this.symptoms = symptoms;
@@ -25,11 +25,11 @@ public class desease {
 		this.name = name;
 	}
 
-	public ArrayList<Syntomps> getSymptoms() {
-		return symptoms;
+	public ArrayList<Symptoms> getSymptoms() {
+		return (ArrayList<Symptoms>) symptoms;
 	}
 
-	public void setSymptoms(ArrayList<Syntomps> symptoms) {
+	public void setSymptoms(ArrayList<Symptoms> symptoms) {
 		this.symptoms = symptoms;
 	}
 

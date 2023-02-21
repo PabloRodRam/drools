@@ -6,7 +6,7 @@ package java.rules
 expander customLanguage.dsl
 
 import javaclases.desease
-import javaclases.Syntomps
+import javSymptomsSyntomps
 
 #declare any global variables here
 
