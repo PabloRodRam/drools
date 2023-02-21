@@ -3,7 +3,8 @@ package javaclases;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-
+import java.util.ArrayList;
+import java.util.List;
 
 public class Main {
 	//List<String> symptoms= new ArrayList<String>();
@@ -27,24 +28,52 @@ public class Main {
 		
 		String text = "";
         int number = 0;
-        
+        List<String> symptoms= new ArrayList<String>();
 		  try {
               BufferedReader consola = new BufferedReader(new InputStreamReader(System.in));
               text = consola.readLine();
               number = Integer.parseInt(text);
-         
+              System.out.println("Hello, write the number of the symptom or symptoms that you suffer: ");
+  			  System.out.println("1. Shortness of breath"+"\n"
+  								+"2. Rapid breathing"+"\n"
+  								+"3. Wheezing"+"\n"
+  								+"4. Cyanosis"+"\n"
+  								+"5. Headache"+"\n");
 
 		do {
+			BufferedReader consola2 = new BufferedReader(new InputStreamReader(System.in));
+            text = consola2.readLine();
+            number = Integer.parseInt(text);
+			switch(number){
+			case 1: 
+			symptoms.add("Shortness of breath");
+			number = 0;
+			System.out.println("add1 ");
+			break;
+			case 2: symptoms.add("Rapid breathing");
+			number = 0;
+			System.out.println("add2 ");
+			break;
+			case 3: symptoms.add("Wheezing");
+			number = 0;
+			System.out.println("add3 ");
+			break;
+			case 4: symptoms.add("Cyanosis");
+			number = 0;
+			System.out.println("add4 ");
+			break;
+			case 5: symptoms.add("Headache");
+			number = 0;
+			System.out.println("add5 ");
+			break;
+			case 6: System.out.println("This are yur symptoms: ");
+					System.out.println(symptoms.toString());
+					number = 6;
+					break;
+			}
 			
-			System.out.println("Hello, write the number of the symptom or symptoms that you suffer: ");
-			System.out.println("  0. Shortness of breath"+"/n"
-								+"1. Rapid breathing"+"/n"
-								+"2.Wheezing"+"/n"
-								+"3.Cyanosis"+"/n"
-								+"4.Headache"+"/n");
 			
-			
-			}while (true);
+			}while (number!=6);
 
 		  } catch (IOException ioe) {
               System.out.println("Error in keyboard reading. Please enter an input again.");
